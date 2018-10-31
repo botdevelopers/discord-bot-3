@@ -38,7 +38,7 @@ exports.conf = {
 };
 
 exports.help = {
-  name: '',
-  description: '',
-  usage: ''
+  name: 'yasakla',
+  description: 'Belirtilen Kullanıcıyı Sunucudan Yasaklar',
+  usage: 'yasakla [@Kullanıcı] [Sebep]'
 };
