@@ -1,4 +1,8 @@
-if(cmd === `${prefix}ban`){
+const Discord = require('discord.js');
+const client = new Discord.Client();
+
+exports.run = (client, message, args) => {
+    if(message === `${prefix}ban`){
 
     let bUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
     if(!bUser) return message.channel.send("Can't find user!");
@@ -24,3 +28,17 @@ if(cmd === `${prefix}ban`){
 
     return;
   }
+};
+
+exports.conf = {
+  enabled: true,
+  guildOnly: false,
+  aliases: [],
+  permLevel: 4
+};
+
+exports.help = {
+  name: '',
+  description: '',
+  usage: ''
+};
