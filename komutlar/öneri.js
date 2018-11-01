@@ -8,7 +8,7 @@ exports.run = function(client, message, args) {
 	var channelID = "507565338020282394";
 	
 	if (!öneri){
-		return message.reply("Bir mesaj belirtin! Doğru kullanım: **?öneri <mesaj>**");
+		return message.reply("Bir mesaj belirtin! Doğru kullanım: **.öneri <mesaj>**");
 	} else {
 		
 		var embed = new Discord.RichEmbed()
