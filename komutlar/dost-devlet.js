@@ -8,7 +8,7 @@ exports.run = function(client, message, args) {
 	var channelID = "506440069922553856";
 	
 	if (!öneri){
-		return message.reply("Bir Devlet Belirt! Doğru kullanım: **.düşman-devlet <devlet>**");
+		return message.reply("Bir Devlet Belirt! Doğru kullanım: **.dost-devlet <devlet>**");
 	} else {
 		
 		var embed = new Discord.RichEmbed()
